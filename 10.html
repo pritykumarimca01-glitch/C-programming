@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Merge Objects</title>
+</head>
+<body>
+
+<h2>Merging Two Objects</h2>
+<p id="output"></p>
+
+<script>
+    // First object
+    let ob = {
+        name: "kiranpal sir",
+        age: 20
+    };
+
+    // Second object
+    let obj2 = {
+        course: "MCA",
+        city: "Bihar"
+    };
+
+    // Merge objects
+    let mergedObj = Object.assign({}, obj1, obj2);
+
+    // Display result
+    document.getElementById("output").innerHTML =
+        "<b>Merged Object:</b> " + JSON.stringify(mergedObj);
+</script>
+
+</body>
+</html>

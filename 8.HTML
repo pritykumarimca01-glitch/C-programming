@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nested Functions Demo</title>
+</head>
+<body>
+
+<h2>Nested Functions in JavaScript</h2>
+<p id="output"></p>
+
+<script>
+    function outerFunction(name) {
+
+        // inner function (nested function)
+        function innerFunction() {
+            return "Hello, " + name + "!";
+        }
+
+        // calling inner function
+        return innerFunction();
+    }
+
+    // calling outer function
+    let result = outerFunction("KIRANPAL SIR");
+
+    document.getElementById("output").innerHTML = result;
+</script>
+
+</body>
+</html>

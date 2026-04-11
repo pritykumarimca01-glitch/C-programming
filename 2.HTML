@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Paragraph with Images</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            background: white;
+            padding: 14px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .container img {
+            width: 206px;
+            height: auto;
+            margin-right: 20px;
+            border-radius: 10px;
+        }
+
+        .text {
+            text-align: justify;
+        }
+
+        /* Reverse layout for alternate section */
+        .reverse {
+            flex-direction: row-reverse;
+        }
+
+        .reverse img {
+            margin-right: 0;
+            margin-left: 20px;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .container img {
+                margin: 0 0 15px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Aligned Paragraphs with Images</h1>
+
+    <div class="container">
+        <img src="https://media.istockphoto.com/id/1645602428/photo/perfect-light-purple-and-pink-dahlia-enlarged-isolated-on-white-background.jpg?s=1024x1024&w=is&k=20&c=3bshkw2BCsNg2Outrf4H5xC9mYbB9PmiKfjYb858H2w=" alt="Sample Image 1">
+        <div class="text">
+            <p>
+                This is the first paragraph. The image is aligned to the left side,
+                and the text flows nicely beside it. This layout is commonly used
+                in blogs and websites to improve readability and visual appeal.
+            </p>
+        </div>
+    </div>
+
+    <div class="container reverse">
+        <img src="https://images.pexels.com/photos/697259/pexels-photo-697259.jpeg" alt="Sample Image 2">
+        <div class="text">
+            <p>
+                This is the second paragraph. Here, the image is aligned to the right
+                side using a reverse layout. Alternating layouts like this make the
+                webpage more attractive and engaging for users.
+            </p>
+        </div>
+    </div>
+
+    <div class="container">
+        <img src="https://images.unsplash.com/photo-1566669086984-077347c1f4bb?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmVhdXRpZnVsJTIwZmxvd2VyfGVufDB8fDB8fHww" alt="Sample Image 3">
+        <div class="text">
+            <p>
+                This is another section with image on the left. Using flexbox makes
+                alignment very easy and responsive. You can replace these placeholder
+                images with your own images.
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>

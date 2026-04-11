@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Browser Information</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #f2f2f2;
+            text-align: center;
+        }
+
+        .box {
+            background: white;
+            padding: 20px;
+            margin: 50px auto;
+            width: 400px;
+            box-shadow: 0 0 10px gray;
+            border-radius: 10px;
+        }
+
+        h2 {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+<div class="box">
+    <h2>Browser Information</h2>
+    <p id="info"></p>
+</div>
+
+<script>
+    let info = "";
+
+    info += "<b>Browser Name:</b> " + navigator.appName + "<br>";
+    info += "<b>Browser Version:</b> " + navigator.appVersion + "<br>";
+    info += "<b>User Agent:</b> " + navigator.userAgent + "<br>";
+    info += "<b>Platform:</b> " + navigator.platform + "<br>";
+    info += "<b>Language:</b> " + navigator.language + "<br>";
+    info += "<b>Cookies Enabled:</b> " + navigator.cookieEnabled + "<br>";
+
+    document.getElementById("info").innerHTML = info;
+</script>
+
+</body>
+</html>

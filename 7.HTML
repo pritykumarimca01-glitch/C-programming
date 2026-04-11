@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Array Methods Demo</title>
+</head>
+<body>
+
+<h2>JavaScript Array Methods</h2>
+<p id="output"></p>
+
+<script>
+    let fruits = ["Apple", "Banana", "Mango"];
+
+    // push() - add element at end
+    fruits.push("Orange");
+
+    // pop() - remove last element
+    fruits.pop();
+
+    // shift() - remove first element
+    fruits.shift();
+
+    // unshift() - add element at beginning
+    fruits.unshift("Pineapple");
+
+    // join() - convert array to string
+    let fruitString = fruits.join(", ");
+
+    // map() - create new array
+    let numbers = [1, 2, 3, 4];
+    let squares = numbers.map(function(num) {
+        return num * num;
+    });
+
+    // filter() - filter elements
+    let evenNumbers = numbers.filter(function(num) {
+        return num % 2 === 0;
+    });
+
+    // display result
+    document.getElementById("output").innerHTML =
+        "<b>Fruits:</b> " + fruitString + "<br>" +
+        "<b>Squares:</b> " + squares + "<br>" +
+        "<b>Even Numbers:</b> " + evenNumbers;
+</script>
+
+</body>
+</html>
